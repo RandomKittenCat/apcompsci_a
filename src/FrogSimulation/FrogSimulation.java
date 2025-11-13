@@ -9,7 +9,9 @@ public class FrogSimulation {
         maxHops=numHops;
     }
 
-    private int hopDistance(){ /* implementation not shown */ }
+    private int hopDistance() {
+        return 0; // not shown
+    }
 
     public boolean simulate(){
         int pos = 0;
