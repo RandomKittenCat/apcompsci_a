@@ -13,7 +13,7 @@ public class ArrayNotes {
 
         // prefill array values
         int[] nums2 = {7, 2, 2, 1, 9, 8, 5};
-        int[] below = belowThreshold(nums, 9);
+        int[] below = belowThreshold(nums2, 9);
 
         print(nums2);
         print(below);
