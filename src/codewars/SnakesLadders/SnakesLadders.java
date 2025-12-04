@@ -1,5 +1,7 @@
 package codewars.SnakesLadders;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class SnakesLadders {
     public SnakesLadders() {
         SnakesLadders game = new SnakesLadders();
