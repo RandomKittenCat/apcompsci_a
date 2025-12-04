@@ -9,7 +9,7 @@ public class SnakesLadders {
         assertEquals("Player 1 is on square 25", game.play(1, 1));
     }
 
-    private boolean pl1 = false;
+    private boolean pl1 = true;
 
     public String play(int die1, int die2) {
         int[] board = {
@@ -34,7 +34,11 @@ public class SnakesLadders {
         int sumdice = die1+die2;
 
         spot+=(sumdice+board[sumdice-1]);
+        pl1 = !pl1;
 
+
+        /* if they reach spot 100, current player should win
+        if they go past, they need to go back the number of spaces they had left in their roll */
         if (spot == 100){
             return "Player n Wins!"; //replace n with 1/2
         }else if (spot > 100) {
