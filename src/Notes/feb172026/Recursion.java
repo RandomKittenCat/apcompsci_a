@@ -18,14 +18,14 @@ public class Recursion {
     }
 
     public static void recurString(String s, int index){
-        if(index==s.length()) return; //leave the method once index is too high
+        if(index==s.length()) return; // leave the method once index is too high
 
         System.out.println(s.substring(index, index+1));
         recurString(s, index+1);
     }
 
     public static void flipString(String s, int index){
-        if(index==s.length()) return; //leave the method once index is too high
+        if(index==s.length()) return; // leave the method once index is too high
 
         flipString(s, index+1); // swapping the lines prints it in reverse
 
